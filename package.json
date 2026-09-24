@@ -1,0 +1,39 @@
+{
+  "name": "healwright",
+  "version": "1.0.0",
+  "description": "Autonomous AI-powered self-healing E2E test & selector repair engine for Playwright",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "healwright": "bin/healwright.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "node --test dist/test/*.test.js",
+    "demo": "node bin/healwright.js fix --test-file examples/sample.spec.ts --line 7 --html examples/sample.html --selector \"#old-checkout-submit-btn\""
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "testing",
+    "self-healing",
+    "test-automation",
+    "ai-agent",
+    "selector-healing",
+    "devops",
+    "qa",
+    "quality-assurance"
+  ],
+  "author": "bombordirocrocodildok-cmyk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bombordirocrocodildok-cmyk/healwright.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
