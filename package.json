@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "test": "node --test dist/test/*.test.js",
+    "test": "node test/run.js",
     "demo": "node bin/healwright.js fix --test-file examples/sample.spec.ts --line 7 --html examples/sample.html --selector \"#old-checkout-submit-btn\""
   },
   "keywords": [
